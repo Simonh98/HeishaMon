@@ -178,7 +178,7 @@ void check_wifi() {
     log_message(_F("Weird case, WiFi seems disconnected but is not. Resetting WiFi!"));
     setupWifi(&heishamonSettings);
 #else
-    log_message(_F("WiFi just got disconnected, still have IP addres."));
+    log_message(_F("WiFi just got disconnected, still have IP address."));
 #endif
   } else if ((wifistatus != WL_CONNECTED) || (!WiFi.localIP())) {
     /*
